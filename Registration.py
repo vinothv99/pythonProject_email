@@ -71,7 +71,7 @@ def login():
         print("You have not yet registere")
         print("Register below")
         register()
-#login()
+login()
 
 def forgot():
     db = open("file.txt", "r")
