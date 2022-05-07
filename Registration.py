@@ -46,7 +46,7 @@ def register():
             db.write(email+", "+create_password+"\n")
             print("email created successfully")
 
-#register()
+register()
 
 def login():
     db = open("file.txt", "r")
@@ -91,6 +91,5 @@ def forgot():
     else:
         print("Email is incorrect")
         register()
-#forgot()
+forgot()
 
-def hi():
