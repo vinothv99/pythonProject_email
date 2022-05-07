@@ -46,7 +46,7 @@ def register():
             db.write(email+", "+create_password+"\n")
             print("email created successfully")
 
-register()
+#register()
 
 def login():
     db = open("file.txt", "r")
@@ -71,7 +71,7 @@ def login():
         print("You have not yet registere")
         print("Register below")
         register()
-login()
+#login()
 
 def forgot():
     db = open("file.txt", "r")
@@ -83,14 +83,23 @@ def forgot():
         b = b.strip()
         d.append(a)
         f.append(b)
-    data = dict(zip(d, f))
     if email_login in d:
-        for index in range (len(f)):
-            b = f[index]
-        print(b)
+        for j in range (len(f)):
+            value = f[j]
+        print(value)
     else:
         print("Email is incorrect")
         register()
-forgot()
-hi
+#forgot()
+
+def access():
+    lt = ["1.Register","2.Login","3.Forgotpassword"]
+    print(lt)
+    v = int(input())
+    for i in range(1,lt):
+
+
+
+
+access()
 
