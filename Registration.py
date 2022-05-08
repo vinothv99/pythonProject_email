@@ -14,7 +14,7 @@ def register():
         f.append(b)
     data = dict(zip(d, f))
 
-    if re.search('^[a-z 0-9]+[\_.]?[a-z 0-9]+[@]\w+[.]\w{2,3}',email):
+    if re.search('^[a-z 0-9]+[\_.]?[a-z 0-9]+[@]\w+[.]\w{2,3}$',email):
         pass
     else:
         print("email endered is in valid")
